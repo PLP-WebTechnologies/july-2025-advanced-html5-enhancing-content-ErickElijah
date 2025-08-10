@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PLP Coffee Shop</title>
+</head>
+<body>
+
+  <h1>Welcome to PLP Coffee Shop</h1>
+  <p>We serve fresh coffee and snacks every day. Below you can see our menu, 
+    working hours, and order form.</p>
+
+  <!-- List -->
+  <h2>Our Popular Drinks</h2>
+  <ul>
+    <li>Espresso</li>
+    <li>Cappuccino</li>
+    <li>Latte</li>
+    <li>Hot Chocolate</li>
+  </ul>
+
+  <!-- Table -->
+  <h2>Opening Hours</h2>
+  <table border="1">
+    <tr>
+      <th>Day</th>
+      <th>Open</th>
+      <th>Close</th>
+    </tr>
+    <tr>
+      <td>Monday - Friday</td>
+      <td>8:00 AM</td>
+      <td>6:00 PM</td>
+    </tr>
+    <tr>
+      <td>Saturday</td>
+      <td>9:00 AM</td>
+      <td>5:00 PM</td>
+    </tr>
+    <tr>
+      <td>Sunday</td>
+      <td>Closed</td>
+      <td>-</td>
+    </tr>
+  </table>
+
+  <!-- Image -->
+  <h2>Our Special Brew</h2>
+<img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg" 
+     alt="Cup of coffee on a table" width="300" height="300">
+
+
+  <!-- Video -->
+  <h2>Our Setup</h2>
+  <video width="320" height="240" controls>
+    <source src="https://videos.pexels.com/video-files/25724633/11903941_1440_2430_60fps.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Form -->
+  <h2>Order Your Coffee</h2>
+  <form action="#" method="post">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="John Doe" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+    <label for="drink">Choose Your Drink:</label><br>
+    <select id="drink" name="drink" required>
+      <option>--Select--</option>
+      <option>Espresso</option>
+      <option>Cappuccino</option>
+      <option>Latte</option>
+      <option>Hot Chocolate</option>
+    </select><br><br>
+
+    <label for="quantity">Quantity (1-5):</label><br>
+    <input type="number" id="quantity" name="quantity" min="1" max="5" required><br><br>
+
+    <label for="pickup-date">Pickup Date:</label><br>
+    <input type="date" id="pickup-date" name="pickup-date" required><br><br>
+
+    <input type="submit" value="Place Order">
+  </form>
+
+  <p>© 2025 PLP Coffee Shop</p>
+
+</body>
+</html>
